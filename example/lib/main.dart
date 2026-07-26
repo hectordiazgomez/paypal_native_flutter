@@ -41,7 +41,7 @@ class _CheckoutDemoState extends State<CheckoutDemo> {
     try {
       await PaypalNativeFlutter.init(
         // TODO: replace with your sandbox client ID from developer.paypal.com
-        clientId: 'YOUR_SANDBOX_CLIENT_ID',
+        clientId: 'BAAjPPbk50JM-b4FCAyUWw9CG4e_fKnKu-mHaazD3D6KGYKCeJrrpE4zO8j4lwH0F2byLUa46cY29a733I',
         environment: PayPalEnvironment.sandbox,
         returnUrl: 'dev.yourorg.paypalnativeflutterexample://paypal-return',
       );
@@ -63,7 +63,7 @@ class _CheckoutDemoState extends State<CheckoutDemo> {
     // In a real app this orderId comes from YOUR BACKEND (Orders v2).
     // For a quick sandbox smoke test you can create one manually with curl
     // and paste it here — see the README.
-    const orderId = 'PASTE_A_SANDBOX_ORDER_ID';
+    const orderId = '8HL57119LM2626501';
     setState(() => _status = 'Approving with card…');
     try {
       final approval = await PaypalNativeFlutter.approveOrderWithCard(
@@ -86,7 +86,7 @@ class _CheckoutDemoState extends State<CheckoutDemo> {
   }
 
   Future<void> _payWithPayPal() async {
-    const orderId = 'PASTE_A_SANDBOX_ORDER_ID';
+    const orderId = '8HL57119LM2626501';
     setState(() => _status = 'Launching PayPal…');
     try {
       final approval = await PaypalNativeFlutter.approveOrderWithPayPal(
