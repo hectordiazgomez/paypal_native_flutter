@@ -1,6 +1,11 @@
 name: paypal_native_flutter
-description: "A new Flutter plugin project."
-version: 0.0.1
+description: >-
+  Native PayPal card payments and PayPal web checkout for Flutter, wrapping
+  the official paypal-android and paypal-ios SDKs. Server-created Orders v2;
+  your client secret never touches the app.
+version: 0.1.0
+homepage: https://github.com/hectordiazgomez/paypal_native_flutter
+repository: https://github.com/hectordiazgomez/paypal_native_flutter
 homepage:
 
 environment:
