@@ -1,4 +1,4 @@
-group 'dev.yourorg.paypal_native_flutter'
+group 'dev.hectordiazgomez.paypal_native_flutter'
 version '0.1.0'
 
 buildscript {
@@ -18,7 +18,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'dev.yourorg.paypal_native_flutter'
+    namespace 'dev.hectordiazgomez.paypal_native_flutter'
     compileSdk 34
     defaultConfig {
         minSdk 23

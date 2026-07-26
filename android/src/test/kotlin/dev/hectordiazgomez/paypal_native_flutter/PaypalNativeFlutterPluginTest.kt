@@ -1,4 +1,4 @@
-package dev.yourorg.paypal_native_flutter
+package dev.hectordiazgomez.paypal_native_flutter
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
