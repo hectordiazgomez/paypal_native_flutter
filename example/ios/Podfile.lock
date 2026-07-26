@@ -1,0 +1,40 @@
+PODS:
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - PayPal/CardPayments (2.0.1):
+    - PayPal/CorePayments
+  - PayPal/CorePayments (2.0.1)
+  - PayPal/PayPalWebPayments (2.0.1):
+    - PayPal/CorePayments
+  - paypal_native_flutter (0.1.0):
+    - Flutter
+    - PayPal/CardPayments (= 2.0.1)
+    - PayPal/PayPalWebPayments (= 2.0.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - paypal_native_flutter (from `.symlinks/plugins/paypal_native_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PayPal
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  paypal_native_flutter:
+    :path: ".symlinks/plugins/paypal_native_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+  PayPal: 20b107dd206d8445286817672ddfe261f4d5b781
+  paypal_native_flutter: 55fa27da5c7108307bf4dabaf31ecf45d196763b
+
+PODFILE CHECKSUM: e30f02f9d1c72c47bb6344a0a748c9d268180865
+
+COCOAPODS: 1.16.2

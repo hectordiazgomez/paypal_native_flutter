@@ -1,0 +1,38 @@
+group 'dev.yourorg.paypal_native_flutter'
+version '0.1.0'
+
+buildscript {
+    ext.kotlin_version = '1.9.24'
+    repositories { google(); mavenCentral() }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.4.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories { google(); mavenCentral() }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace 'dev.yourorg.paypal_native_flutter'
+    compileSdk 34
+    defaultConfig {
+        minSdk 23
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+}
+
+dependencies {
+    // Pin exact versions; PayPal has shipped breaking changes between minors.
+    // https://github.com/paypal/paypal-android/releases
+    implementation 'com.paypal.android:card-payments:2.3.0'
+    implementation 'com.paypal.android:paypal-web-payments:2.3.0'
+}
