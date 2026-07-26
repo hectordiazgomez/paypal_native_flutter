@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Native PayPal card payments and web checkout for Flutter.'
   s.description      = 'Flutter bindings for PayPal official Android and iOS SDKs. Custom native card checkout and SDK-managed PayPal web checkout with server-created Orders v2 payments.'
-  s.homepage         = 'https://github.com/yourorg/paypal_native_flutter'
+  s.homepage         = 'https://github.com/hectordiazgomez/paypal_native_flutter'
   s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = { 'You' => 'you@example.com' }
   s.source           = { :path => '.' }
